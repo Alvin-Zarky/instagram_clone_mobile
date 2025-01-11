@@ -339,7 +339,7 @@ class MainSetting extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

@@ -1,8 +1,12 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:convert';
 import 'dart:io';
+
 import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:flutter/material.dart';
 import "package:flutter_dotenv/flutter_dotenv.dart";
+import 'package:http/http.dart' as http;
 import 'package:instagram/models/post_models.dart';
 import 'package:instagram/models/user_model.dart';
 import 'package:instagram/providers/post_provider.dart';
@@ -12,7 +16,6 @@ import 'package:instagram/providers/user_provider.dart';
 import 'package:instagram/routes/route_path.dart';
 import 'package:instagram/utils/http_error_handling.dart';
 import 'package:instagram/utils/snackbar_modal.dart';
-import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

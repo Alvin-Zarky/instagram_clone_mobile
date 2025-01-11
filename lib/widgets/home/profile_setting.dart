@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:instagram/providers/user_post_provider.dart';
 import 'package:instagram/screens/setting/main_setting.dart';
-import 'package:instagram/services/socket_service.dart';
 import 'package:instagram/services/user_service.dart';
 import 'package:provider/provider.dart';
 
@@ -15,7 +14,6 @@ class ProfileSetting extends StatefulWidget {
 class _ProfileSettingState extends State<ProfileSetting> {
   final UserService userService = UserService();
 
-  final SocketRepository _socketRepository = SocketRepository();
   @override
   void initState() {
     super.initState();
