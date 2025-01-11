@@ -1,6 +1,4 @@
 import "package:flutter/material.dart";
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:instagram/routes/route_path.dart';
 import 'package:instagram/services/user_service.dart';
 
 class SignInScreen extends StatefulWidget {

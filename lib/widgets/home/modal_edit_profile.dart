@@ -1,4 +1,7 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:io';
+
 import 'package:email_validator/email_validator.dart';
 import "package:flutter/material.dart";
 import 'package:instagram/constants/constant.dart';

@@ -1,5 +1,4 @@
 import "package:flutter/material.dart";
-import 'package:hive_flutter/hive_flutter.dart';
 
 class HiveLocally extends StatefulWidget {
   const HiveLocally({Key? key}) : super(key: key);
@@ -9,15 +8,13 @@ class HiveLocally extends StatefulWidget {
 }
 
 class _HiveLocallyState extends State<HiveLocally> {
-  final _myBox = Hive.box('dataView');
   @override
   Widget build(BuildContext context) {
-    print(_myBox);
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            children: const [
+            children: [
               Text("Collection"),
               SizedBox(height: 10),
             ],

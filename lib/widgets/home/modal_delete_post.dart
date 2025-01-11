@@ -52,8 +52,8 @@ class _ModalDeletePostState extends State<ModalDeletePost> {
                         right: 18,
                         top: 13,
                         bottom: widget.userId == user!.id ? 5 : 15),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         Icon(
                           Icons.bookmark_outline,
                           size: 30,
@@ -84,8 +84,8 @@ class _ModalDeletePostState extends State<ModalDeletePost> {
                             width: double.infinity,
                             padding: const EdgeInsets.only(
                                 left: 18, right: 18, top: 5, bottom: 13),
-                            child: Row(
-                              children: const [
+                            child: const Row(
+                              children: [
                                 Icon(
                                   Icons.block_outlined,
                                   size: 30,

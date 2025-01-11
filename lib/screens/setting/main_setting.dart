@@ -27,12 +27,12 @@ class MainSetting extends StatelessWidget {
                         onTap: () {
                           Navigator.pop(context);
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.chevron_left,
                           size: 32,
                         ),
                       ),
-                      Center(
+                      const Center(
                         child: Text(
                           "Settings and privacy",
                           style: TextStyle(
@@ -41,7 +41,7 @@ class MainSetting extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Icon(
+                      const Icon(
                         Icons.logout,
                         color: Colors.white,
                       )
@@ -49,39 +49,39 @@ class MainSetting extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
                 margin: const EdgeInsets.only(top: 10, bottom: 30),
-                padding: EdgeInsets.only(left: 15, right: 15),
-                constraints: BoxConstraints(maxHeight: 43),
+                padding: const EdgeInsets.only(left: 15, right: 15),
+                constraints: const BoxConstraints(maxHeight: 43),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    fillColor: Color.fromARGB(255, 224, 224, 224),
+                    fillColor: const Color.fromARGB(255, 224, 224, 224),
                     filled: true,
                     hintText: 'Search...',
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.search,
                       color: Colors.grey,
                     ),
                     contentPadding: const EdgeInsets.only(left: 10),
                     enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color.fromARGB(255, 224, 224, 224)),
+                      borderSide: const BorderSide(
+                          color: Color.fromARGB(255, 224, 224, 224)),
                       borderRadius: BorderRadius.circular(25),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color.fromARGB(255, 224, 224, 224)),
+                      borderSide: const BorderSide(
+                          color: Color.fromARGB(255, 224, 224, 224)),
                       borderRadius: BorderRadius.circular(13),
                     ),
                   ),
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 15, right: 15),
-                child: Row(
+                padding: const EdgeInsets.only(left: 15, right: 15),
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
@@ -104,13 +104,13 @@ class MainSetting extends StatelessWidget {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.account_circle_outlined,
                           size: 27,
                         ),
                         Container(
                           padding: const EdgeInsets.only(left: 10),
-                          child: Column(
+                          child: const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Account Centre"),
@@ -129,7 +129,7 @@ class MainSetting extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {},
-                      child: Icon(Icons.chevron_right),
+                      child: const Icon(Icons.chevron_right),
                     )
                   ],
                 ),
@@ -138,7 +138,7 @@ class MainSetting extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 25, bottom: 15),
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                       style: TextStyle(color: Colors.grey, height: 1.5),
                       text:
                           'Manage your connected experience and account settings across Meta technologies.',
@@ -152,12 +152,12 @@ class MainSetting extends StatelessWidget {
                       ]),
                 ),
               ),
-              Divider(
+              const Divider(
                 color: Color.fromARGB(255, 237, 237, 237),
                 height: 30,
                 thickness: 4,
               ),
-              Container(
+              SizedBox(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -165,7 +165,7 @@ class MainSetting extends StatelessWidget {
                       margin: const EdgeInsets.only(bottom: 25),
                       padding:
                           const EdgeInsets.only(left: 15, right: 15, top: 10),
-                      child: Text(
+                      child: const Text(
                         "How you use instagram",
                         style: kTextStyleTitleAccSetting,
                       ),
@@ -173,7 +173,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -196,7 +196,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -216,7 +216,7 @@ class MainSetting extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: Color.fromARGB(255, 237, 237, 237),
                       height: 30,
                       thickness: 4,
@@ -224,7 +224,7 @@ class MainSetting extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -232,7 +232,7 @@ class MainSetting extends StatelessWidget {
                       margin: const EdgeInsets.only(bottom: 25),
                       padding:
                           const EdgeInsets.only(left: 15, right: 15, top: 10),
-                      child: Text(
+                      child: const Text(
                         "What you see",
                         style: kTextStyleTitleAccSetting,
                       ),
@@ -240,7 +240,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -265,7 +265,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -288,7 +288,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -311,7 +311,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -331,7 +331,7 @@ class MainSetting extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: Color.fromARGB(255, 237, 237, 237),
                       height: 30,
                       thickness: 4,
@@ -339,7 +339,7 @@ class MainSetting extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -347,7 +347,7 @@ class MainSetting extends StatelessWidget {
                       margin: const EdgeInsets.only(bottom: 25),
                       padding:
                           const EdgeInsets.only(left: 15, right: 15, top: 10),
-                      child: Text(
+                      child: const Text(
                         "What you see",
                         style: kTextStyleTitleAccSetting,
                       ),
@@ -355,7 +355,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -380,7 +380,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -403,7 +403,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -426,7 +426,7 @@ class MainSetting extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(bottom: 23),
                       padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -446,7 +446,7 @@ class MainSetting extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: Color.fromARGB(255, 237, 237, 237),
                       height: 30,
                       thickness: 4,

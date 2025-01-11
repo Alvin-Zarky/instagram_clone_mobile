@@ -258,8 +258,8 @@ class _ProfileAccountScreenState extends State<ProfileAccountScreen> {
                         child: post.isEmpty
                             ? Container(
                                 margin: const EdgeInsets.only(top: 140),
-                                child: Column(
-                                  children: const [
+                                child: const Column(
+                                  children: [
                                     Icon(
                                       Icons.photo_camera_outlined,
                                       size: 45,

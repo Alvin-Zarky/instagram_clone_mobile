@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram/constants/constant.dart';
-import 'package:instagram/models/chat_model.dart';
 import 'package:instagram/providers/chat_provider.dart';
 import 'package:instagram/services/chat_service.dart';
 import 'package:instagram/services/socket_service.dart';
@@ -68,8 +67,8 @@ class _ChatRoomState extends State<ChatRoom> {
                               ),
                             ],
                           ),
-                          Row(
-                            children: const [
+                          const Row(
+                            children: [
                               FaIcon(FontAwesomeIcons.phone, size: 20),
                               SizedBox(width: 20),
                               FaIcon(FontAwesomeIcons.video, size: 22)
