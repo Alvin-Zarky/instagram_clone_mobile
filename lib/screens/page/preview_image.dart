@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import "package:flutter/material.dart";
 import 'package:instagram/constants/constant.dart';
@@ -146,9 +147,9 @@ class _ImagePreviewingState extends State<ImagePreviewing> {
                       ),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Text(
                         "Add Location",
                         style: TextStyle(fontFamily: "Inter", fontSize: 15),
@@ -173,9 +174,9 @@ class _ImagePreviewingState extends State<ImagePreviewing> {
                       ),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Text(
                         "Advanced Settings",
                         style: TextStyle(fontFamily: "Inter", fontSize: 15),

@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram/models/user_model.dart';
-import 'package:instagram/providers/chat_provider.dart';
 import 'package:instagram/providers/user_provider.dart';
 import 'package:instagram/routes/route_path.dart';
 import 'package:instagram/services/chat_service.dart';
@@ -89,9 +88,9 @@ class _DefaultChatRoomState extends State<DefaultChatRoom> {
                   ),
                   Container(
                     margin: const EdgeInsets.only(top: 25),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           "Messages",
                           style: TextStyle(

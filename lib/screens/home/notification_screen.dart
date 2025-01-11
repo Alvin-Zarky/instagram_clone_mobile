@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:instagram/controller/notification_controller.dart';
 import 'package:instagram/providers/data_locally_provider.dart';
 import 'package:instagram/widgets/notification/list_data.dart';

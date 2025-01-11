@@ -13,11 +13,11 @@ class _HiveLocallyState extends State<HiveLocally> {
   @override
   Widget build(BuildContext context) {
     print(_myBox);
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            children: const [
+            children: [
               Text("Collection"),
               SizedBox(height: 10),
             ],

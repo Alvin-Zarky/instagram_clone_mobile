@@ -1,6 +1,5 @@
 import "package:flutter/material.dart";
 import 'package:instagram/providers/user_post_provider.dart';
-import 'package:instagram/routes/route_path.dart';
 import 'package:instagram/screens/setting/main_setting.dart';
 import 'package:instagram/services/socket_service.dart';
 import 'package:instagram/services/user_service.dart';
@@ -55,8 +54,8 @@ class _ProfileSettingState extends State<ProfileSetting> {
                           builder: (context) => const MainSetting()));
                       // Navigator.pushNamed(context, Routes.accountSetting);
                     },
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         Icon(
                           Icons.settings_outlined,
                           size: 27,
@@ -89,8 +88,8 @@ class _ProfileSettingState extends State<ProfileSetting> {
                         border: Border(
                             bottom: BorderSide(
                                 color: Color.fromARGB(255, 222, 222, 222)))),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         Icon(
                           Icons.logout_outlined,
                           size: 27,

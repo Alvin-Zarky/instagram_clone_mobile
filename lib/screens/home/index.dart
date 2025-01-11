@@ -1,16 +1,11 @@
 import "package:flutter/material.dart";
-import 'package:instagram/controller/index_controller.dart';
-import 'package:instagram/providers/chat_provider.dart';
-import 'package:instagram/providers/page_provider.dart';
 import 'package:instagram/screens/home/default_home_screen.dart';
 import 'package:instagram/screens/home/notification_screen.dart';
 import 'package:instagram/screens/home/post_data_screen.dart';
 import 'package:instagram/screens/home/profile_account_screen.dart';
 import 'package:instagram/screens/home/search_screen.dart';
-import 'package:instagram/services/post_service.dart';
 import 'package:instagram/services/socket_service.dart';
 import 'package:instagram/widgets/home/bottom_navigation.dart';
-import 'package:provider/provider.dart';
 
 class IndexScreen extends StatefulWidget {
   const IndexScreen({Key? key}) : super(key: key);
